@@ -1,12 +1,24 @@
 /** @format */
 
+import { appStore } from "@/base/store/app/App.store";
+import HomeHeader from "@/components/Header/HomeHeader";
 import { Outlet } from "react-router-dom";
 
+function HeaderComponent({ pageType }: { pageType: string }) {
+  switch (pageType) {
+    case "home":
+      return <HomeHeader />;
+    default:
+      return null;
+  }
+}
+
 export default function MainLayout() {
+  const { pageType } = appStore();
   return (
     <div className='min-h-screen'>
       {/* Header */}
-      <h1>HEADER</h1>
+      <HeaderComponent pageType={pageType} />
 
       <main>
         <Outlet />

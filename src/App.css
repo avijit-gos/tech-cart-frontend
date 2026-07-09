@@ -1,0 +1,13 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&family=Yuyu+Short&display=swap");
+
+:root {
+  --primary-color: #3874ff;
+  --primary-disable-color: #5996ff;
+  --primary-hover-color: #5996ff;
+  --primary-text-color: #091413;
+
+  --font-oregano: "Oregano", cursive;
+  --font-yuyu: "Yuyu Short", sans-serif;
+}
