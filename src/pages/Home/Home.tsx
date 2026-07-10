@@ -4,6 +4,8 @@ import { appStore } from "@/base/store/app/App.store";
 import { useLayoutEffect } from "react";
 import AuthModal from "@/components/modals/AuthModalComp";
 import BannerCarousel from "@/components/Banners/BannerCarousel";
+import PageTitle from "@/components/PageTitle/PageTitle";
+import Category from "@/components/Categories/Category";
 
 const Home = () => {
   const { setPageType } = appStore();
@@ -15,10 +17,15 @@ const Home = () => {
       <section className='w-full aspect-1920/650 overflow-hidden'>
         <BannerCarousel />
       </section>
-      <h4>Product category Section</h4>
-      <h4>Upcoming Items</h4>
+      <section>
+        <PageTitle title='Category' />
+        <section className='w-[80vw] p-3 mx-auto'>
+          <Category />
+        </section>
+      </section>
+      {/* <h1 className='text-2xl font-semibold'>Upcoming Items</h1>
       <h4>Last view Items</h4>
-      <h4>Footer</h4>
+      <h4>Footer</h4> */}
     </div>
   );
 };

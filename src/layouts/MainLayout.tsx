@@ -25,7 +25,7 @@ export default function MainLayout() {
       </main>
 
       {/* Footer */}
-      <h1>FOOTER</h1>
+      {/* <h1>FOOTER</h1> */}
     </div>
   );
 }
