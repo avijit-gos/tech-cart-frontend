@@ -6,6 +6,7 @@ export const VITE_IMAGE_URL = import.meta.env.VITE_IMAGE_URL;
 
 export const urls = Object.freeze({
   BANNER_ENDPOINT: "/banner/active",
+  CATEGORY_ENDPOINT: "/product-category/active",
 });
 export const PUBSUB_TOPICS = {
   TOPIC_SIGNUP: "signup",

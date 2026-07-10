@@ -4,7 +4,7 @@ import ErrorImg from "../../../public/error.png";
 
 const Errors = ({ error }: { error: string }) => {
   return (
-    <div className='w-full h-full flex items-center justify-center bg-gray-100'>
+    <div className='w-full h-full flex items-center justify-center bg-gray-100/10 p-7'>
       <div className='rounded-md bg-gray-200 w-124 h-56 p-3 flex items-center'>
         <img
           src={ErrorImg}
